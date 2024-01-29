@@ -101,7 +101,7 @@ const Home = () => {
       </div>
 
       <div className="px-5 pt-12 bg-white">
-        <div className="container flex flex-col items-start mx-auto lg:items-center">
+        <div className=" flex flex-col items-start mx-auto lg:items-center">
           <p className="relative flex items-start justify-start w-full text-lg font-bold tracking-wider text-btn-purple uppercase lg:justify-center lg:items-center">
             DON&apos;T JUST TAKE OUR WORD FOR IT
           </p>

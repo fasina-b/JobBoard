@@ -2,7 +2,7 @@ import { db } from '@/lib/db';
 import { NextApiRequest } from 'next';
 import { NextRequest, NextResponse } from 'next/server';
 
-export default async function GET(req: NextApiRequest) {
+export default async function handler(req: NextApiRequest) {
   try {
     const jobs = await db.job.findMany();
 
@@ -13,3 +13,4 @@ export default async function GET(req: NextApiRequest) {
   }
   
   }
+  export { handler as GET };

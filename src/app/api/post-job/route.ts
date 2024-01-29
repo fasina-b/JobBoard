@@ -22,7 +22,7 @@ export const PostJobSchema = z.object({
 
 });
 
-export async function POST(req: Request, res: NextApiResponse) {
+export async function handler(req: Request, res: NextApiResponse) {
   try {
 
     const body = await req.json();
@@ -64,3 +64,4 @@ export async function POST(req: Request, res: NextApiResponse) {
     return NextResponse.json({ message: 'Internal' }, { status: 500 });
   }
 }
+export {handler as POST };

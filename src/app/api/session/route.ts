@@ -2,7 +2,7 @@ import { authOptions } from "@/lib/auth";
 import { getServerSession } from "next-auth";
 import { NextResponse } from "next/server";
 
-export async function GET(request: Request) {
+export async function handler(request: Request) {
   const session = await getServerSession(authOptions);
 
   if (!session) {
@@ -16,4 +16,5 @@ export async function GET(request: Request) {
     session,
   });
 }
+export { handler as GET };
 

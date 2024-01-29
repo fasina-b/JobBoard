@@ -6,7 +6,7 @@ import NextAuth, { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
 import { NextResponse } from 'next/server';
 
-export async function GET(req: NextApiRequest) {
+export async function handler(req: NextApiRequest) {
   const session = await getServerSession();
 
     try {
@@ -23,3 +23,5 @@ export async function GET(req: NextApiRequest) {
     }
  
 }
+
+export { handler as GET};

@@ -5,7 +5,7 @@ import { db } from '@/lib/db';
 import { getServerSession } from 'next-auth';
 import { NextRequest, NextResponse } from 'next/server';
 
-export async function DELETE(req: NextRequest) {
+export async function handler(req: NextRequest) {
   const session = await getServerSession();
 
     try {
@@ -43,3 +43,4 @@ export async function DELETE(req: NextRequest) {
       return NextResponse.json({ message: 'Internal server error'}, { status: 500 });
     }
 }
+export { handler as DELETE };

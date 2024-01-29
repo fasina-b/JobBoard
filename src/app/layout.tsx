@@ -22,9 +22,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <NextAuthProvider>
-        <div className='flex flex-col mx-auto min-h-screen'>
+        <div className='flex pt-3 flex-col mx-auto min-h-screen'>
           {!isAuthPage && <NavBar />}
-          <div className='flex-auto'>
+          <div className='flex-auto m-5 '>
             {children}
           </div>
           {!isAuthPage && <Footer />}
