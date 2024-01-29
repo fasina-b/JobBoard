@@ -30,7 +30,7 @@ const ExploreJobs = () => {
     <div>
       <div>
         {jobs.map((job) => (
-          <JobCard job={job} />
+          <JobCard key={job} job={job} />
         ))}
       </div>
     </div>

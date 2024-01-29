@@ -2,12 +2,13 @@
 
 import { NextApiRequest, NextApiResponse } from 'next';
 import { db } from '@/lib/db';
-import { getServerSession } from 'next-auth';
+import NextAuth, { getServerSession } from 'next-auth';
+import { authOptions } from '@/lib/auth';
+import { NextResponse } from 'next/server';
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+export async function GET(req: NextApiRequest) {
   const session = await getServerSession();
 
-  if (req.method === 'GET') {
     try {
       const jobs = await db.job.findMany({
         where: {
@@ -15,12 +16,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         },
       });
 
-      res.status(200).json({ jobs });
+      return NextResponse.json({ jobs }, { status: 200 });
     } catch (error) {
       console.error('Error fetching jobs:', error);
-      res.status(500).json({ message: 'Internal Server Error' });
+      return NextResponse.json({ message: 'Internal Server Error' }, { status: 500 });
     }
-  } else {
-    res.status(405).json({ message: 'Method Not Allowed' });
-  }
+ 
 }

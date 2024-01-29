@@ -35,7 +35,7 @@ const Modal: React.FC<ModalProps> = ({ showModal, setShowModal }) => {
                 <div className="relative p-6 flex-auto">
                   <p className="my-4 text-blueGray-500 text-lg leading-relaxed">
                   To post a job, you need to be logged in. Please log in or create an account to continue.
-                  If you don't have an account yet, you can easily create one by clicking the "Sign Up" button on the login page.
+                  If you don&apos;t have an account yet, you can easily create one by clicking the &rdquo;Sign Up&rdquo; button on the login page.
                   </p>
                 </div>
                 {/*footer*/}

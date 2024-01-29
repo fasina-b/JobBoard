@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import Image from 'next/image'
+
 
 const Home = () => {
   return (
@@ -35,7 +37,7 @@ const Home = () => {
         </div>
         <div className="m-12 w-full flex-1 hidden sm:block md:block">
           <div></div>
-          <img className="" src="/search.svg" />
+          <Image className="" src="/search.svg"  alt='search'/>
         </div>
       </div>
 
@@ -103,7 +105,7 @@ const Home = () => {
       <div className="px-5 pt-12 bg-white">
         <div className="container flex flex-col items-start mx-auto lg:items-center">
           <p className="relative flex items-start justify-start w-full text-lg font-bold tracking-wider text-btn-purple uppercase lg:justify-center lg:items-center">
-            DON'T JUST TAKE OUR WORD FOR IT
+            DON&apos;T JUST TAKE OUR WORD FOR IT
           </p>
 
           <h2 className="relative flex items-start justify-start w-full max-w-3xl text-5xl font-bold lg:justify-center">
@@ -124,7 +126,7 @@ const Home = () => {
             <div className="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/3 lg:mb-0">
               <div className="flex items-center justify-center">
                 <div className="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full">
-                  <img
+                  <Image
                     src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1700&amp;q=80"
                     className="object-cover w-full h-full"
                     alt="John Doe"
@@ -136,7 +138,7 @@ const Home = () => {
                 </div>
               </div>
               <blockquote className="mt-8 text-lg text-gray-500">
-                "This platform has been a game-changer for my job search. I found the perfect job within weeks!"
+              &rdquo;This platform has been a game-changer for my job search. I found the perfect job within weeks!&rdquo;
               </blockquote>
             </div>
 
@@ -144,7 +146,7 @@ const Home = () => {
             <div className="flex flex-col items-start justify-start w-full h-auto px-0 mx-0 mb-12 border-l border-r border-transparent lg:w-1/3 lg:mb-0 lg:px-8 lg:mx-8 lg:border-gray-200">
               <div className="flex items-center justify-center">
                 <div className="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full">
-                  <img
+                  <Image
                     src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2547&amp;q=80"
                     className="object-cover w-full h-full"
                     alt="Jane Doe"
@@ -156,7 +158,7 @@ const Home = () => {
                 </div>
               </div>
               <blockquote className="mt-8 text-lg text-gray-500">
-                "The opportunities I found here perfectly align with my career goals. Truly a fantastic job portal!"
+                &rdquo;The opportunities I found here perfectly align with my career goals. Truly a fantastic job portal!&rdquo;
               </blockquote>
             </div>
 
@@ -164,7 +166,7 @@ const Home = () => {
             <div className="flex flex-col items-start justify-start w-full h-auto lg:w-1/3">
               <div className="flex items-center justify-center">
                 <div className="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full">
-                  <img
+                  <Image
                     src="https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1256&amp;q=80"
                     className="object-cover w-full h-full"
                     alt="John Smith"
@@ -176,7 +178,7 @@ const Home = () => {
                 </div>
               </div>
               <blockquote className="mt-8 text-lg text-gray-500">
-                "I landed my dream job through this platform. It's a must-use resource for any job seeker!"
+                &rdquo;I landed my dream job through this platform. It's a must-use resource for any job seeker!&rdquo;
               </blockquote>
             </div>
           </div>

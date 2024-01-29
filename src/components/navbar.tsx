@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { getSession, signOut, useSession } from "next-auth/react";
+import Image from 'next/image'
 
 
 
@@ -12,7 +13,7 @@ const NavBar: React.FC = () => {
   return (
     <nav className="px-5 sm:pt-5 sm:px-10 md:px-10 md:py-0 lg:px-20 flex items-center justify-between">
       <div>
-        <img src="/logo5.png" className="w-48" alt="Logo" />
+        <Image src="/logo5.png" className="w-48" alt="Logo" />
       </div>
       <div>
         <button onClick={() => setNavOpen(true)}>

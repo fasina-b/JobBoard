@@ -25,14 +25,14 @@ export default function Dashboard() {
   };
 
   const handleDelete = async (jobId: string) => {
+    const id = jobId;
+    console.log('Deleting job with ID:', id); // Add this line for debugging
     try {
-      const response = await fetch('/api/fetch-posted-jobs', {
+      const response = await fetch(`/api/delete-job?id=${id}`, { // Change the endpoint to delete-job
         method: 'DELETE',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ jobId }),
+        
       });
+      console.log('job with ID:', response); // Add this line for debugging
 
       if (response.ok) {
         // Refresh the jobs after successful deletion

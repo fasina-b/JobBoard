@@ -2,6 +2,8 @@
 import { useRouter } from 'next/navigation';
 import { signIn } from "next-auth/react";
 import React, { useState } from 'react';
+import Image from 'next/image'
+
 import z from 'zod';
 
 
@@ -133,7 +135,7 @@ const SignInForm = () => {
                   <span className="ml-3">Login</span>
                 </button>
                 <p className="mt-6 text-xs text-gray-600 text-center">
-                  Don't have an account?{" "}
+                  Don&apos;t have an account?{" "}
                   <a href="/sign-up">
                     <span className="text-btn-dark-blue hover:text-btn-orange-hover transition-all duration-500 ease-in-out font-semibold">Sign up</span>
                   </a>
@@ -145,7 +147,7 @@ const SignInForm = () => {
 
         <div className="flex-1 bg-background-orange text-center hidden md:flex">
           <div className="m-12 xl:m-16 w-full bg-contain bg-center bg-no-repeat">
-            <img src="/login.svg" alt="job-background" className="background-orange"/>
+            <Image src="/login.svg" alt="job-background" className="background-orange"/>
           </div>
         </div>
 

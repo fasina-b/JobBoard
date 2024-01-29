@@ -11,7 +11,8 @@ interface Job {
 
 interface JobsTableProps {
   jobs: Job[];
-  onDelete: (jobId: string) => void;
+  onDelete: (jobId: any) => void;
+
 }
 
 const JobsTable: React.FC<JobsTableProps> = ({ jobs, onDelete }) => {
