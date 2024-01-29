@@ -178,7 +178,7 @@ const Home = () => {
                 </div>
               </div>
               <blockquote className="mt-8 text-lg text-gray-500">
-                &rdquo;I landed my dream job through this platform. It's a must-use resource for any job seeker!&rdquo;
+                &rdquo;I landed my dream job through this platform. It&apos;s a must-use resource for any job seeker!&rdquo;
               </blockquote>
             </div>
           </div>
