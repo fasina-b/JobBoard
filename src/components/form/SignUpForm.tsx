@@ -1,8 +1,6 @@
 'use client'
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
-import { signIn } from "next-auth/react";
-import Image from 'next/image'
 import z from 'zod';
 
 const invalid_type_error = 'Invalid type provided for this field';
@@ -84,7 +82,7 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ onSubmit }) => {
       <div className="max-w-screen-xl  bg-white border shadow sm:rounded-lg flex justify-center flex-1">
         <div className="flex-1 bg-background-orange text-center hidden md:flex">
           <div className="m-12 xl:m-16 w-full bg-contain bg-center bg-no-repeat">
-            <Image src="/jobhunt.svg" alt="job-background" className="background-orange"/>
+            <img src="/jobhunt.svg" alt="job-background" className="background-orange"/>
           </div>
         </div>
         <div className="lg:w-1/2 xl:w-5/12 p-6 sm:p-12">

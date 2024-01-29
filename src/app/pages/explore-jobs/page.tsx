@@ -9,7 +9,7 @@ const ExploreJobs = () => {
 
   const fetch_jobs = async () => {
     try {
-      const response = await fetch('/api/explore-jobs');
+      const response = await fetch('/api/exploreJobs');
       if (response.ok) {
         const data = await response.json();
         // Assuming the data structure is { jobs: [...] }

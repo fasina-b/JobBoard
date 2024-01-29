@@ -1,5 +1,3 @@
-import Link from 'next/link'
-import Image from 'next/image'
 
 
 const Home = () => {
@@ -37,7 +35,7 @@ const Home = () => {
         </div>
         <div className="m-12 w-full flex-1 hidden sm:block md:block">
           <div></div>
-          <Image className="" src="/search.svg"  alt='search'/>
+          <img className="" src="/search.svg"  alt='search'/>
         </div>
       </div>
 
@@ -126,7 +124,7 @@ const Home = () => {
             <div className="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/3 lg:mb-0">
               <div className="flex items-center justify-center">
                 <div className="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full">
-                  <Image
+                  <img
                     src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1700&amp;q=80"
                     className="object-cover w-full h-full"
                     alt="John Doe"
@@ -146,7 +144,7 @@ const Home = () => {
             <div className="flex flex-col items-start justify-start w-full h-auto px-0 mx-0 mb-12 border-l border-r border-transparent lg:w-1/3 lg:mb-0 lg:px-8 lg:mx-8 lg:border-gray-200">
               <div className="flex items-center justify-center">
                 <div className="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full">
-                  <Image
+                  <img
                     src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2547&amp;q=80"
                     className="object-cover w-full h-full"
                     alt="Jane Doe"
@@ -166,7 +164,7 @@ const Home = () => {
             <div className="flex flex-col items-start justify-start w-full h-auto lg:w-1/3">
               <div className="flex items-center justify-center">
                 <div className="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full">
-                  <Image
+                  <img
                     src="https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1256&amp;q=80"
                     className="object-cover w-full h-full"
                     alt="John Smith"

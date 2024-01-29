@@ -2,7 +2,6 @@
 import { useRouter } from 'next/navigation';
 import { signIn } from "next-auth/react";
 import React, { useState } from 'react';
-import Image from 'next/image'
 
 import z from 'zod';
 
@@ -147,7 +146,7 @@ const SignInForm = () => {
 
         <div className="flex-1 bg-background-orange text-center hidden md:flex">
           <div className="m-12 xl:m-16 w-full bg-contain bg-center bg-no-repeat">
-            <Image src="/login.svg" alt="job-background" className="background-orange"/>
+            <img src="/login.svg" alt="job-background" className="background-orange"/>
           </div>
         </div>
 
