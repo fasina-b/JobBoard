@@ -1,8 +1,8 @@
-import { NextApiRequest, NextApiResponse } from 'next';
 import { db } from '@/lib/db';
-import { NextResponse } from 'next/server';
+import { NextApiRequest } from 'next';
+import { NextRequest, NextResponse } from 'next/server';
 
-export  async function GET(req: NextApiRequest) {
+export default async function GET(req: NextApiRequest) {
   try {
     const jobs = await db.job.findMany();
 
